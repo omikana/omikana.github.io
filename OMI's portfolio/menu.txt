@@ -1,0 +1,38 @@
+
+	<div class="footnav">
+		<ul>
+			<li><a href="index.html">MY プロフィール<span></span></a></li>
+			<li><a href="#">作品集<span></span></a>
+				<div>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">スキル<span></span></a>
+				<div>
+					<ul>
+						<li><a href="#">コーディング</a><span></span></li>
+						<div>
+							<ul>
+								<li><a href="#">HTML/CSS</a></li>
+								<li><a href="#">JavaScript</a></li>
+								<li><a href="#">WordPress</a></li>
+								<li><a href="#">Dreamweaver</a></li>
+							</ul>
+						</div>
+						<li><a href="#">アプリケーション</a><span></span></li>
+						<div>
+							<ul>
+								<li><a href="#">Illustrator</a></li>
+								<li><a href="#">Photoshop</a></li>
+								<li><a href="#">XD</a></li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">コンタクト<span></span></a></li>
+		</ul>
+	  </div>
