@@ -50,7 +50,9 @@ body {
   display: flex;
 }
 
-
+.jc {
+	justify-content: space-between;
+}
 
 /*-------------------
 header
@@ -154,7 +156,7 @@ footer {
 	
 	small {
 		height: 5rem;
-		background-image: url("img/copy.png");
+		background-image: url("../img/copy.png");
 		background-size: contain;
 		background-repeat: no-repeat;
 		font-size: 1.3rem;
@@ -168,7 +170,7 @@ footer {
   
   .sitano1 {
     width: 100vw;
-	background-image: url("img/barsita.png");
+	background-image: url("../img/barsita.png");
 	background-repeat: repeat-x;
     position: fixed;
 	bottom: 0;
@@ -185,7 +187,7 @@ footer {
 }
 
 .iconbaitai {
-  background-image: url("img/tate.png"),url("img/tate.png");
+  background-image: url("../img/tate.png"),url("../img/tate.png");
   background-position: right,left;
   background-size: contain;
   padding: 0 20px;
@@ -288,31 +290,124 @@ ul.gmenu .oomaka li:hover {
   white-space: nowrap;
 }
 
-/*.htmlcssjs{
-	position: static;
-	bottom: 5rem;
-	margin-bottom: 50px;
+
+
+
+
+
+
+	
+.sp {
+	display: none
 }
 	
-.aipsxd {
-	position: static;
-	top: 5rem;
-}
 	
-.aipsxd li {
-	background: #C0C0C0;
-}
-	*/
+@media (max-width: 420px) {
+	
+	.pc {
+		display: none;
+	}
+	.sp {
+		display: block;
+	}
+	
+	body {
+	background: #FFFFFF;
+	}
+	header {
+	background: #D3E4FA;
+		padding: 8px 10px;
+	}
 	
 	
+	/*--------------
+	sp menu
+	--------------*/
+	header .sp{
+		
+		img{
+			max-height: 30px;
+		}
+		h1 {
+			font-size: 16px;
+			display: inline-block;
+		}	
+	}
+	
+	.sp_main_img {
+		margin-top: 15px;
+	}
+	
+	.sp_footer{
+		height: 165px;
+		position: relative;
+		background: #D3E4FA;
+		
+		.img_sentaku {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		
+		.img_modoru{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		
+		.img_menu{
+			position: absolute;
+			bottom: 15px;
+			left: 10px;
+		}
+		
+		.img_daimaru {
+			max-width: 155px;
+			position: absolute;
+			top: 7px;
+			left: 30%;
+		}
+		
+		.img_maru {
+			position: absolute;
+			top: 35%;
+			left: 43%;
+		}
+		
+		.img_migi {
+			position: absolute;
+			top: 36%;
+			right: 28%;
+		}
+		
+		.img_hidari {
+			position: absolute;
+			top: 36%;
+			left: 29%;
+		}
+		
+		.img_ue{
+			position: absolute;
+			top: 8%;
+			left: 43%;
+		}
+		
+		.img_sita {
+			position: absolute;
+			bottom: 3%;
+			left: 43%;
+		}
+	}/*---sp_footer---*/
+	
+	.fixed {
+		position: fixed;
+		bottom: 0;
+		left: 0;  
+    	width: 100%; 
+	}
 	
 	
-	
-	
-	
-	
-	
-	
+}/*--media--*/
 	
 	
 	

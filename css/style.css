@@ -37,6 +37,9 @@ body {
 .flex {
   display: flex; }
 
+.jc {
+  justify-content: space-between; }
+
 /*-------------------
 header
 --------------------*/
@@ -108,7 +111,7 @@ footer
 ---------------------*/
 footer small {
   height: 5rem;
-  background-image: url("img/copy.png");
+  background-image: url("../img/copy.png");
   background-size: contain;
   background-repeat: no-repeat;
   font-size: 1.3rem;
@@ -117,7 +120,7 @@ footer small {
     display: none; }
 footer .sitano1 {
   width: 100vw;
-  background-image: url("img/barsita.png");
+  background-image: url("../img/barsita.png");
   background-repeat: repeat-x;
   position: fixed;
   bottom: 0;
@@ -129,7 +132,7 @@ footer .start {
   max-height: 5rem; }
 
 .iconbaitai {
-  background-image: url("img/tate.png"), url("img/tate.png");
+  background-image: url("../img/tate.png"), url("../img/tate.png");
   background-position: right,left;
   background-size: contain;
   padding: 0 20px;
@@ -203,18 +206,81 @@ ul.gmenu .oomaka li:hover {
   bottom: 0.2rem;
   white-space: nowrap; }
 
-/*.htmlcssjs{
-	position: static;
-	bottom: 5rem;
-	margin-bottom: 50px;
-}
-	
-.aipsxd {
-	position: static;
-	top: 5rem;
-}
-	
-.aipsxd li {
-	background: #C0C0C0;
-}
-	*/
+.sp {
+  display: none; }
+
+@media (max-width: 420px) {
+  .pc {
+    display: none; }
+
+  .sp {
+    display: block; }
+
+  body {
+    background: #FFFFFF; }
+
+  header {
+    background: #D3E4FA;
+    padding: 8px 10px; }
+
+  /*--------------
+  sp menu
+  --------------*/
+  header .sp img {
+    max-height: 30px; }
+  header .sp h1 {
+    font-size: 16px;
+    display: inline-block; }
+
+  .sp_main_img {
+    margin-top: 15px; }
+
+  .sp_footer {
+    height: 165px;
+    position: relative;
+    background: #D3E4FA; }
+    .sp_footer .img_sentaku {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+    .sp_footer .img_modoru {
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+    .sp_footer .img_menu {
+      position: absolute;
+      bottom: 15px;
+      left: 10px; }
+    .sp_footer .img_daimaru {
+      max-width: 155px;
+      position: absolute;
+      top: 7px;
+      left: 30%; }
+    .sp_footer .img_maru {
+      position: absolute;
+      top: 35%;
+      left: 43%; }
+    .sp_footer .img_migi {
+      position: absolute;
+      top: 36%;
+      right: 28%; }
+    .sp_footer .img_hidari {
+      position: absolute;
+      top: 36%;
+      left: 29%; }
+    .sp_footer .img_ue {
+      position: absolute;
+      top: 8%;
+      left: 43%; }
+    .sp_footer .img_sita {
+      position: absolute;
+      bottom: 3%;
+      left: 43%; }
+
+  /*---sp_footer---*/
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; } }
+/*--media--*/

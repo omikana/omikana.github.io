@@ -1,1 +1,0 @@
-# omikana.github.io

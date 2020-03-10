@@ -5,21 +5,20 @@
   <title>OMI's Portfolio | 自己紹介</title>
 
 
-
-  <!--style.css-->
-  <link href="style.css" rel="stylesheet">
-
   <!--less.css-->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
   <!--レスポンシブ-->
   <meta name="viewport" content="width=device-widht, initial-scale=1">
+	
+	  <!--style.css-->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <div>
+    <div class="pc">
       <ul>
         <li><a href="profile.html">
             <div class="icon"><img src="img/pc.png" alt="プロフィールに飛びます">
@@ -45,16 +44,33 @@
             </div>
           </a></li>
       </ul>
-    </div>
+    </div><!--pc-->
+	  
+	  <div class="sp">
+		  
+		  <div class="flex jc">
+			<div class="sp_header_set"><img src="imgsp/denpa0.png" alt="電波のアイコン">
+		  <img src="imgsp/i.png" alt="iのアイコン">
+		  <h1>omi's portfolio</h1></div>
+		  <img src="imgsp/denti.png" alt="電池のアイコン"></div>
+		  
+		  
+		  
+	  </div>
   </header>
 
 
   <main class="wrapper">
+	  
+	  <img class="sp wrapper sp_main_img" src="imgsp/main_menu.png" alt="メニュー">
+	  
     <article>
-      <div class="bar flex">
+      <div class="bar flex pc">
         <h2>OMI's Portfolio</h2>
         <a href="#"><img src="img/batu.png" alt="トップページに戻る"></a>
       </div>
+		
+		
 
 
       <div class="nakami">
@@ -80,8 +96,7 @@
 
   <footer>
 
-
-    <div class="flex sitano1">
+    <div class="flex sitano1 pc">
       <div class="sitano flex">
         <nav id="footernav">
           <ul class="gmenu">
@@ -127,6 +142,26 @@
       </div>
       <small>copyright©2020 omi portfolio</small>
     </div>
+	  
+	  
+	  
+	  <div class="sp fixed">
+		  <div class="sp_footer">
+	  	<img class="img_sentaku" src="imgsp/sentaku.png" alt="選択">
+		  <img class="img_menu" src="imgsp/footer_menu.png" alt="メニュー">
+		  <img class="img_modoru" src="imgsp/modoru.png" alt="戻る">
+		  <img class="img_daimaru" src="imgsp/daimaru.png" alt="丸">
+		  <img class="img_maru" src="imgsp/syoumaru.png" alt="丸選択">
+		  <img class="img_migi" src="imgsp/migi.png" alt="右">
+		  <img class="img_hidari" src="imgsp/hidari.png" alt="左">
+		  <img class="img_ue" src="imgsp/ue.png" alt="上">
+		  <img class="img_sita" src="imgsp/sita.png" alt="下">
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
   </footer>
 
 </body></html>
