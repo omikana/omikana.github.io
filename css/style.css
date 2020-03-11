@@ -84,11 +84,13 @@ main {
     width: auto; }
 
 article {
-  margin-top: 70px;
   padding: 3px 8px 10px;
   background-color: #C0C0C0;
   height: 70vh;
   overflow: hidden; }
+
+.pc_article {
+  margin-top: 70px; }
 
 /*----------------------
 section　中身
@@ -223,6 +225,9 @@ ul.gmenu .oomaka li:hover {
     background: #D3E4FA;
     padding: 8px 10px; }
 
+  .pc_article {
+    margin: 15px 5px; }
+
   /*--------------
   sp menu
   --------------*/
@@ -263,7 +268,7 @@ ul.gmenu .oomaka li:hover {
     .sp_footer .img_migi {
       position: absolute;
       top: 36%;
-      right: 28%; }
+      right: 30%; }
     .sp_footer .img_hidari {
       position: absolute;
       top: 36%;
@@ -282,5 +287,28 @@ ul.gmenu .oomaka li:hover {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; } }
+    width: 100%; }
+
+  /*--------------
+  nakami
+  -----------------*/
+  .nakami {
+    background: #fff; }
+    .nakami article {
+      background: #fff; }
+
+  main {
+    margin-bottom: 170px; }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -20px;
+    pointer-events: none; }
+
+  .col {
+    padding-top: 20px;
+    padding-left: 5px;
+    width: 33.3333%; } }
 /*--media--*/

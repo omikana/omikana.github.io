@@ -113,11 +113,14 @@ main {
 }
 
 article {
-	margin-top: 70px;
 	padding: 3px 8px 10px;
 	background-color: #C0C0C0;
   height: 70vh;
   overflow: hidden;
+}
+
+.pc_article {
+	margin-top: 70px;
 }
 
 
@@ -319,6 +322,9 @@ ul.gmenu .oomaka li:hover {
 		padding: 8px 10px;
 	}
 	
+	.pc_article {
+		margin: 15px 5px;
+	}
 	
 	/*--------------
 	sp menu
@@ -377,7 +383,7 @@ ul.gmenu .oomaka li:hover {
 		.img_migi {
 			position: absolute;
 			top: 36%;
-			right: 28%;
+			right: 30%;
 		}
 		
 		.img_hidari {
@@ -406,6 +412,39 @@ ul.gmenu .oomaka li:hover {
     	width: 100%; 
 	}
 	
+	
+	/*--------------
+	nakami
+	-----------------*/
+	
+	.nakami {
+		background: #fff;
+	
+		article {
+			background: #fff;
+		}
+		
+	}
+  
+  main {
+    margin-bottom: 170px;
+  }
+	
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -20px;
+  //padding部分にホバーが効かないようにする
+  pointer-events: none;
+}
+
+.col {
+  padding-top: 20px;
+  padding-left: 5px;
+  width: 33.3333%;
+}
+  
 	
 }/*--media--*/
 	
