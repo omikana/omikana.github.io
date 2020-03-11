@@ -64,17 +64,15 @@
 	  
 	  <img class="sp wrapper sp_main_img" src="imgsp/main_menu.png" alt="メニュー">
 	  
-    <article>
+    <article class="pc_article">
       <div class="bar flex pc">
         <h2>OMI's Portfolio</h2>
         <a href="#"><img src="img/batu.png" alt="トップページに戻る"></a>
       </div>
 		
 		
-
-
       <div class="nakami">
-        <section>
+        <section id="spImgMenu">
           <h3>自己紹介</h3>
           <p>御覧頂きありがとうございます。<br>
             このページはタイピングしか出来なかった私が半年間<br>
@@ -82,6 +80,20 @@
         </section>
       </div>
     </article>
+    
+    <div class="spmenujs sp">
+  <ul class="row">
+  <li class="col"><img src="imgsp/profile.png" alt="プロフィール"></li>
+  <li class="col"><img src="imgsp/skill.png" alt="スキル"></li>
+  <li class="col"><img src="imgsp/gallery.png" alt="作品集"></li>
+  <li class="col"><img src="imgsp/github.png" alt="ギットハブ"></li>
+  <li class="col"><img src="imgsp/menu_sp.png" alt="メニュー"></li>
+  <li class="col"><img src="imgsp/form.png" alt="お問合せ"></li>
+  <li class="col">7</li>
+  <li class="col">8</li>
+  <li class="col">9</li>
+</ul>
+</div>
 
 
 
@@ -148,7 +160,8 @@
 	  <div class="sp fixed">
 		  <div class="sp_footer">
 	  	<img class="img_sentaku" src="imgsp/sentaku.png" alt="選択">
-		  <img class="img_menu" src="imgsp/footer_menu.png" alt="メニュー">
+      <input type="image" class="img_menu" src="imgsp/footer_menu.png" onclick="menu();" alt="メニュー">
+
 		  <img class="img_modoru" src="imgsp/modoru.png" alt="戻る">
 		  <img class="img_daimaru" src="imgsp/daimaru.png" alt="丸">
 		  <img class="img_maru" src="imgsp/syoumaru.png" alt="丸選択">
@@ -163,5 +176,6 @@
 	  
 	  
   </footer>
-
-</body></html>
+<script src="sp.js"></script>
+</body>
+</html>
