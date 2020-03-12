@@ -10,14 +10,15 @@
 
   <!--レスポンシブ-->
   <meta name="viewport" content="width=device-widht, initial-scale=1">
-	
-	  <!--style.css-->
+
+  <!--style.css-->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-  <header>
+<body id="top_body">
+<ul class="pc_row">
+  <li class="pc_col1">
+    <header>
     <div class="pc">
       <ul>
         <li><a href="profile.html">
@@ -58,8 +59,9 @@
 		  
 	  </div>
   </header>
+  </li>
 
-
+  <li class="pc_col2">
   <main class="wrapper">
 	  
 	  <img class="sp wrapper sp_main_img" src="imgsp/main_menu.png" alt="メニュー">
@@ -67,44 +69,41 @@
     <article class="pc_article">
       <div class="bar flex pc">
         <h2>OMI's Portfolio</h2>
-        <a href="#"><img src="img/batu.png" alt="トップページに戻る"></a>
+        <a href="javascript:history.back()"><img src="img/batu.png" alt="前のページに戻る"></a>
       </div>
 		
 		
       <div class="nakami">
         <section id="spImgMenu">
-          <h3>自己紹介</h3>
+          <h3 class="nakami_header">自己紹介</h3>
+          <div class="nakami_section">
           <p>御覧頂きありがとうございます。<br>
             このページはタイピングしか出来なかった私が半年間<br>
-            職業訓練校に通い身に着けたスキルをまとめたポートフォリオサイトです。</p>
-        </section>
+            職業訓練校に通い身に着けたスキルをまとめたポートフォリオサイトです。<br>
+          </p>
+          <p class="pc">左のアイコン、もしくは下のスタートボタンからページが開けます。</p>
+          <p class="sp">メニューボタンを押すとメニューに切り替わります。</p>
+          </div>
+          </section>
       </div>
     </article>
     
-    <div class="spmenujs sp">
-  <ul class="row">
-  <li class="col"><img src="imgsp/profile.png" alt="プロフィール"></li>
-  <li class="col"><img src="imgsp/skill.png" alt="スキル"></li>
-  <li class="col"><img src="imgsp/gallery.png" alt="作品集"></li>
-  <li class="col"><img src="imgsp/github.png" alt="ギットハブ"></li>
-  <li class="col"><img src="imgsp/menu_sp.png" alt="メニュー"></li>
-  <li class="col"><img src="imgsp/form.png" alt="お問合せ"></li>
-  <li class="col">7</li>
-  <li class="col">8</li>
-  <li class="col">9</li>
-</ul>
-</div>
 
 
 
 
-    <aside>
 
-    </aside>
+
 
   </main>
-
-
+  </li><!--colの設定の-->
+  
+  <li class="pc_col3">
+    <aside>
+      
+    </aside>
+  </li>
+</ul><!--gridの為-->
 
   <footer>
 
@@ -117,7 +116,7 @@
                 <ul class="oomaka">
                   <li><a href="index.html">MY プロフィール</a></li>
 
-                  <li><a href="#">スキル</a>
+                  <li class="komenu"><a href="#">スキル</a>
                     <div>
                       <ul class="kuwasiku">
                         <li><a href="#">コーディング</a></li>
@@ -126,7 +125,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li><a href="#">作品集</a>
+                  <li class="komenu"><a href="#">作品集</a>
                     <div>
                       <ul class="kuwasiku">
                         <li><a href="#">ホームページ</a></li>
@@ -161,13 +160,15 @@
 		  <div class="sp_footer">
 	  	<img class="img_sentaku" src="imgsp/sentaku.png" alt="選択">
       <input type="image" class="img_menu" src="imgsp/footer_menu.png" onclick="menu();" alt="メニュー">
-
+        
+        
 		  <img class="img_modoru" src="imgsp/modoru.png" alt="戻る">
 		  <img class="img_daimaru" src="imgsp/daimaru.png" alt="丸">
 		  <img class="img_maru" src="imgsp/syoumaru.png" alt="丸選択">
-		  <img class="img_migi" src="imgsp/migi.png" alt="右">
-		  <img class="img_hidari" src="imgsp/hidari.png" alt="左">
-		  <img class="img_ue" src="imgsp/ue.png" alt="上">
+        
+		  <a href="javascript:history.forward()"><img class="img_migi" src="imgsp/migi.png" alt="先に進む"></a>
+		  <a href="javascript:history.back()"><img class="img_hidari" src="imgsp/hidari.png" alt="前のページに戻る"></a>
+		  <a href="#top_body"><img class="img_ue" src="imgsp/ue.png" alt="上"></a>
 		  <img class="img_sita" src="imgsp/sita.png" alt="下">
 	  </div>
 	  </div>

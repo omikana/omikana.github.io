@@ -40,6 +40,39 @@ body {
 .jc {
   justify-content: space-between; }
 
+.sp {
+  display: none; }
+
+/*--------------------
+位置の設定　grid
+---------------------*/
+.pc_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -20px;
+  pointer-events: none; }
+
+.pc_col1 {
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 20%; }
+
+.pc_col2 {
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 58%; }
+
+.pc_col3 {
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 20%; }
+
+.pc_col1 > *,
+.pc_col2 > *,
+.pc_col3 > * {
+  pointer-events: auto; }
+
 /*-------------------
 header
 --------------------*/
@@ -72,15 +105,16 @@ main {
   background-image: linear-gradient(270deg, #0f83d0 0%, #000182 100%);
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
-  margin-bottom: 10px; }
+  margin-top: 2px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 4px inset #353F5A; }
   .bar h2 {
     color: white;
     margin-left: 30px;
     display: inline-block; }
   .bar img {
     margin: 5px 10px;
-    max-height: 3.5rem;
+    max-height: 2.5rem;
     width: auto; }
 
 article {
@@ -95,16 +129,16 @@ article {
 /*----------------------
 section　中身
 ----------------------*/
-section h3 {
-  font-size: 1.5rem;
-  padding: 10px 15px;
-  margin-top: 8px; }
-
 .nakami {
   height: 60vh;
   display: block;
   background: #ccc;
   overflow-y: scroll; }
+  .nakami h3 {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background: #E1DBDC;
+    box-shadow: 0 0 4px inset #999999; }
   .nakami p {
     padding: 10px 15px; }
 
@@ -166,7 +200,7 @@ ul.gmenu > li a {
 ul.gmenu ul {
   display: none; }
 
-ul.gmenu > li:hover ul {
+ul.gmenu > li:hover ul.oomaka {
   display: block;
   height: auto;
   position: absolute;
@@ -208,8 +242,16 @@ ul.gmenu .oomaka li:hover {
   bottom: 0.2rem;
   white-space: nowrap; }
 
-.sp {
-  display: none; }
+/*----------------------------
+gallery
+-------------------------------*/
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%; }
+
+.slick-slide {
+  text-align: center; }
 
 @media (max-width: 420px) {
   .pc {
@@ -237,9 +279,6 @@ ul.gmenu .oomaka li:hover {
     font-size: 16px;
     display: inline-block; }
 
-  .sp_main_img {
-    margin-top: 15px; }
-
   .sp_footer {
     height: 165px;
     position: relative;
@@ -259,28 +298,46 @@ ul.gmenu .oomaka li:hover {
     .sp_footer .img_daimaru {
       max-width: 155px;
       position: absolute;
-      top: 7px;
-      left: 30%; }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
     .sp_footer .img_maru {
       position: absolute;
-      top: 35%;
-      left: 43%; }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
     .sp_footer .img_migi {
       position: absolute;
-      top: 36%;
-      right: 30%; }
+      top: 0;
+      bottom: 0;
+      left: 24%;
+      right: 0;
+      margin: auto; }
     .sp_footer .img_hidari {
       position: absolute;
-      top: 36%;
-      left: 29%; }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 24%;
+      margin: auto; }
     .sp_footer .img_ue {
       position: absolute;
-      top: 8%;
-      left: 43%; }
+      top: 0;
+      bottom: 62%;
+      left: 0;
+      right: 0;
+      margin: auto; }
     .sp_footer .img_sita {
       position: absolute;
-      bottom: 3%;
-      left: 43%; }
+      top: 62%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
 
   /*---sp_footer---*/
   .fixed {
@@ -308,7 +365,29 @@ ul.gmenu .oomaka li:hover {
     pointer-events: none; }
 
   .col {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 5px;
-    width: 33.3333%; } }
+    width: 33.3333%; }
+
+  .col > * {
+    pointer-events: auto; }
+
+  .spmenujs {
+    margin-top: 15px;
+    padding: 15px 0 0 15px; }
+
+  /*-----------------
+  
+  ------------------*/
+  .pc_row {
+    display: block; }
+
+  .pc_col1 {
+    width: 100%; }
+
+  .pc_col2 {
+    width: 100%; }
+
+  .pc_col3 {
+    width: 100%; } }
 /*--media--*/
