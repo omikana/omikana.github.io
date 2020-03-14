@@ -245,14 +245,34 @@ ul.gmenu .oomaka li:hover {
 /*----------------------------
 gallery
 -------------------------------*/
+/*
 .container {
   margin: 0 auto;
   padding: 40px;
-  width: 80%; }
+  width: 80%;
+}
 
 .slick-slide {
-  text-align: center; }
+  text-align: center;
+}
 
+.slick-prev{
+	
+}
+
+
+
+
+.single-item {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.slick-dots {
+	display: flex;
+}
+*/
 @media (max-width: 420px) {
   .pc {
     display: none; }
