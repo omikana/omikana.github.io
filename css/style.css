@@ -5,43 +5,55 @@
 *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 p {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 h2 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+}
 
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #333;
+}
 
 .wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 body {
-  background: #008080; }
+  background: #008080;
+}
 
 .flex {
-  display: flex; }
+  display: flex;
+}
 
 .jc {
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .sp {
-  display: none; }
+  display: none;
+}
 
 /*--------------------
 位置の設定　grid
@@ -51,27 +63,32 @@ body {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -20px;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .pc_col1 {
   padding-top: 30px;
   padding-left: 20px;
-  width: 20%; }
+  width: 20%;
+}
 
 .pc_col2 {
   padding-top: 30px;
   padding-left: 20px;
-  width: 58%; }
+  width: 58%;
+}
 
 .pc_col3 {
   padding-top: 30px;
   padding-left: 20px;
-  width: 20%; }
+  width: 20%;
+}
 
 .pc_col1 > *,
 .pc_col2 > *,
 .pc_col3 > * {
-  pointer-events: auto; }
+  pointer-events: auto;
+}
 
 /*-------------------
 header
@@ -81,14 +98,19 @@ header ul {
   margin-top: 50px;
   position: fixed;
   top: 0px;
-  left: 2%; }
-  header ul .icon {
-    text-align: center;
-    color: white;
-    display: block;
-    padding: 15px; }
-    header ul .icon img {
-      max-width: 60px; }
+  left: 2%;
+}
+
+header ul .icon {
+  text-align: center;
+  color: white;
+  display: block;
+  padding: 15px;
+}
+
+header ul .icon img {
+  max-width: 60px;
+}
 
 /*-------------------
 main 変わらん所　頭の所
@@ -96,7 +118,8 @@ main 変わらん所　頭の所
 main {
   max-width: 800px;
   max-height: 70%;
-  margin-top: 250px; }
+  margin-top: 250px;
+}
 
 .bar {
   background-image: -webkit-linear-gradient(180deg, #0f83d0 0%, #000182 100%);
@@ -107,24 +130,31 @@ main {
   align-items: center;
   margin-top: 2px;
   margin-bottom: 5px;
-  box-shadow: 0 0 4px inset #353F5A; }
-  .bar h2 {
-    color: white;
-    margin-left: 30px;
-    display: inline-block; }
-  .bar img {
-    margin: 5px 10px;
-    max-height: 2.5rem;
-    width: auto; }
+  box-shadow: 0 0 4px inset #353F5A;
+}
+
+.bar h2 {
+  color: white;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.bar img {
+  margin: 5px 10px;
+  max-height: 2.5rem;
+  width: auto;
+}
 
 article {
   padding: 3px 8px 10px;
   background-color: #C0C0C0;
   height: 70vh;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .pc_article {
-  margin-top: 70px; }
+  margin-top: 70px;
+}
 
 /*----------------------
 section　中身
@@ -133,14 +163,19 @@ section　中身
   height: 60vh;
   display: block;
   background: #ccc;
-  overflow-y: scroll; }
-  .nakami h3 {
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    background: #E1DBDC;
-    box-shadow: 0 0 4px inset #999999; }
-  .nakami p {
-    padding: 10px 15px; }
+  overflow-y: scroll;
+}
+
+.nakami h3 {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  background: #E1DBDC;
+  box-shadow: 0 0 4px inset #999999;
+}
+
+.nakami p {
+  padding: 10px 15px;
+}
 
 /*-----------------------
 footer
@@ -151,9 +186,13 @@ footer small {
   background-size: contain;
   background-repeat: no-repeat;
   font-size: 1.3rem;
-  padding: 2rem 1.5rem; }
-  footer small .footnav {
-    display: none; }
+  padding: 2rem 1.5rem;
+}
+
+footer small .footnav {
+  display: none;
+}
+
 footer .sitano1 {
   width: 100vw;
   background-image: url("../img/barsita.png");
@@ -161,24 +200,33 @@ footer .sitano1 {
   position: fixed;
   bottom: 0;
   justify-content: space-between;
-  max-height: 50px; }
+  max-height: 50px;
+}
+
 footer .sitano {
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
+
 footer .start {
-  max-height: 5rem; }
+  max-height: 5rem;
+}
 
 .iconbaitai {
   background-image: url("../img/tate.png"), url("../img/tate.png");
+  background-repeat: no-repeat;
   background-position: right,left;
   background-size: contain;
   padding: 0 20px;
   margin-left: 5px;
-  min-height: 2rem; }
-  .iconbaitai img {
-    max-height: 2.5rem;
-    padding: 0 5px;
-    margin: 0 2px;
-    margin-top: 1.5rem; }
+  min-height: 2rem;
+}
+
+.iconbaitai img {
+  max-height: 2.5rem;
+  padding: 0 5px;
+  margin: 0 2px;
+  margin-top: 1.5rem;
+}
 
 /*------------------
 footnav
@@ -186,19 +234,23 @@ footnav
 ul.gmenu {
   margin: 0;
   padding: 0;
-  background-color: #C0C0C0; }
+  background-color: #C0C0C0;
+}
 
 ul.gmenu > li {
   display: inline-block;
   padding: 5px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 ul.gmenu > li a {
   font-size: 1.7rem;
-  color: #656464; }
+  color: #656464;
+}
 
 ul.gmenu ul {
-  display: none; }
+  display: none;
+}
 
 ul.gmenu > li:hover ul.oomaka {
   display: block;
@@ -206,208 +258,219 @@ ul.gmenu > li:hover ul.oomaka {
   position: absolute;
   background-color: #C0C0C0;
   padding: 5px;
-  margin-left: -5px; }
+  margin-left: -5px;
+}
 
 ul.gmenu ul.oomaka ul.kuwasiku {
-  display: none; }
+  display: none;
+}
 
 ul.oomaka li:hover ul.kuwasiku {
   display: block;
   height: auto;
   position: absolute;
-  background-color: #C0C0C0; }
+  background-color: #C0C0C0;
+}
 
 ul.gmenu ul > li {
   display: block;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+}
 
 ul.gmenu .oomaka li:hover {
-  background-color: #00007D; }
-  ul.gmenu .oomaka li:hover a {
-    color: #8C8DB4; }
+  background-color: #00007D;
+}
+
+ul.gmenu .oomaka li:hover a {
+  color: #8C8DB4;
+}
 
 #footernav ul.gmenu > li {
-  position: relative; }
+  position: relative;
+}
 
 #footernav ul.gmenu > li:hover ul.oomaka {
   bottom: 0.5rem;
   margin-bottom: 5rem;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 .oomaka > li {
-  position: relative; }
+  position: relative;
+}
 
 .oomaka > li:hover ul {
   left: 14rem;
   bottom: 0.2rem;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 /*----------------------------
 gallery
 -------------------------------*/
-/*
-.container {
-  margin: 0 auto;
-  padding: 40px;
-  width: 80%;
+.carousel-item img {
+  max-height: 200px;
 }
 
-.slick-slide {
-  text-align: center;
+.carousel-item p {
+  margin-right: 30px;
 }
 
-.slick-prev{
-	
+.carousel-item a {
+  padding: 50px 0  50px;
+  font-weight: bold;
+  color: #cc1313;
 }
 
-
-
-
-.single-item {
-	display: flex;
-	justify-content: space-between;
-	
-}
-
-.slick-dots {
-	display: flex;
-}
-*/
 @media (max-width: 420px) {
   .pc {
-    display: none; }
-
+    display: none;
+  }
   .sp {
-    display: block; }
-
+    display: block;
+  }
   body {
-    background: #FFFFFF; }
-
+    background: #FFFFFF;
+  }
   header {
     background: #D3E4FA;
-    padding: 8px 10px; }
-
+    padding: 8px 10px;
+  }
   .pc_article {
-    margin: 15px 5px; }
-
+    margin: 15px 5px;
+  }
   /*--------------
-  sp menu
-  --------------*/
+	sp menu
+	--------------*/
   header .sp img {
-    max-height: 30px; }
+    max-height: 30px;
+  }
   header .sp h1 {
     font-size: 16px;
-    display: inline-block; }
-
+    display: inline-block;
+  }
   .sp_footer {
     height: 165px;
     position: relative;
-    background: #D3E4FA; }
-    .sp_footer .img_sentaku {
-      position: absolute;
-      top: 10px;
-      right: 10px; }
-    .sp_footer .img_modoru {
-      position: absolute;
-      top: 10px;
-      left: 10px; }
-    .sp_footer .img_menu {
-      position: absolute;
-      bottom: 15px;
-      left: 10px; }
-    .sp_footer .img_daimaru {
-      max-width: 155px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .sp_footer .img_maru {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .sp_footer .img_migi {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 24%;
-      right: 0;
-      margin: auto; }
-    .sp_footer .img_hidari {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 24%;
-      margin: auto; }
-    .sp_footer .img_ue {
-      position: absolute;
-      top: 0;
-      bottom: 62%;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .sp_footer .img_sita {
-      position: absolute;
-      top: 62%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-
+    background: #D3E4FA;
+  }
+  .sp_footer .img_sentaku {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .sp_footer .img_modoru {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .sp_footer .img_menu {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+  }
+  .sp_footer .img_daimaru {
+    max-width: 155px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .sp_footer .img_maru {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .sp_footer .img_migi {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24%;
+    right: 0;
+    margin: auto;
+  }
+  .sp_footer .img_hidari {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 24%;
+    margin: auto;
+  }
+  .sp_footer .img_ue {
+    position: absolute;
+    top: 0;
+    bottom: 62%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .sp_footer .img_sita {
+    position: absolute;
+    top: 62%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
   /*---sp_footer---*/
   .fixed {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; }
-
+    width: 100%;
+  }
   /*--------------
-  nakami
-  -----------------*/
+	nakami
+	-----------------*/
   .nakami {
-    background: #fff; }
-    .nakami article {
-      background: #fff; }
-
+    background: #fff;
+  }
+  .nakami article {
+    background: #fff;
+  }
   main {
-    margin-bottom: 170px; }
-
+    margin-bottom: 170px;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -20px;
-    pointer-events: none; }
-
+    pointer-events: none;
+  }
   .col {
     padding-top: 10px;
     padding-left: 5px;
-    width: 33.3333%; }
-
+    width: 33.3333%;
+  }
   .col > * {
-    pointer-events: auto; }
-
+    pointer-events: auto;
+  }
   .spmenujs {
     margin-top: 15px;
-    padding: 15px 0 0 15px; }
-
+    padding: 15px 0 0 15px;
+  }
   /*-----------------
   
   ------------------*/
   .pc_row {
-    display: block; }
-
+    display: block;
+  }
   .pc_col1 {
-    width: 100%; }
-
+    width: 100%;
+  }
   .pc_col2 {
-    width: 100%; }
-
+    width: 100%;
+  }
   .pc_col3 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+
 /*--media--*/

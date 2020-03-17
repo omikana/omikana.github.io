@@ -235,6 +235,7 @@ footer {
 
 .iconbaitai {
   background-image: url("../img/tate.png"),url("../img/tate.png");
+  background-repeat: no-repeat;;;
   background-position: right,left;
   background-size: contain;
   padding: 0 20px;
@@ -341,39 +342,18 @@ ul.gmenu .oomaka li:hover {
 /*----------------------------
 gallery
 -------------------------------*/
-/*
-.container {
-  margin: 0 auto;
-  padding: 40px;
-  width: 80%;
+.carousel-item img{
+	max-height: 200px;
+}
+.carousel-item p {
+	margin-right: 30px;
 }
 
-.slick-slide {
-  text-align: center;
+.carousel-item a {
+	padding: 50px 0  50px;
+	font-weight: bold;
+	color: #cc1313;
 }
-
-.slick-prev{
-	
-}
-
-
-
-
-.single-item {
-	display: flex;
-	justify-content: space-between;
-	
-}
-
-.slick-dots {
-	display: flex;
-}
-*/
-
-
-
-
-
 
 
 
