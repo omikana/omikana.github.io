@@ -5,9 +5,9 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
@@ -23,31 +23,31 @@ h2 {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
 }
 
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: #333;
+	text-decoration: none;
+	color: #333;
 }
 
 
 .wrapper {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 body {
-  background: #008080;
+	background: #008080;
 }
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .jc {
@@ -63,30 +63,30 @@ body {
 位置の設定　grid
 ---------------------*/
 .pc_row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+	margin-left: -20px;
   //padding部分にホバーが効かないようにする
-  pointer-events: none;
+	pointer-events: none;
 }
 
 .pc_col1 {
-  padding-top: 30px;
-  padding-left: 20px;
-  width: 20%;
+	padding-top: 30px;
+	padding-left: 20px;
+	width: 20%;
 }
 
 .pc_col2 {
-  padding-top: 30px;
-  padding-left: 20px;
-  width: 58%;
+	padding-top: 30px;
+	padding-left: 20px;
+	width: 58%;
 }
 
 .pc_col3 {
-  padding-top: 30px;
-  padding-left: 20px;
-  width: 20%;
+	padding-top: 30px;
+	padding-left: 20px;
+	width: 20%;
 }
 
 
@@ -94,28 +94,28 @@ body {
 .pc_col2 > *,
 .pc_col3 > *{
   //colの下の要素にはホバーをさせたいのでpointer-eventsを元に戻す
-  pointer-events: auto;
-} 
+	pointer-events: auto;
+}
 /*-------------------
 header
 --------------------*/
 
 header ul{
-  max-width: 300px;
-  margin-top: 50px;
+	max-width: 300px;
+	margin-top: 50px;
 	position: fixed;
-	top: 0px; 
+	top: 0px;
 	left: 2%;
-	
-  .icon {
+
+.icon {
     text-align: center;
     color: white;
 	display: block;
 	padding: 15px;
-	  img {
-		 max-width: 60px;
-	  }
-  }
+		img {
+		max-width: 60px;
+		}
+	}
 }
 
 /*-------------------
@@ -126,7 +126,6 @@ main {
 	max-width: 800px;
 	max-height: 70%;
 	margin-top: 250px;
-	
 }
 
 .bar {
@@ -138,14 +137,14 @@ main {
 	align-items: center;
 	margin-top: 2px;
 	margin-bottom: 5px;
-  box-shadow: 0 0 4px inset #353F5A;
-	
+	box-shadow: 0 0 4px inset #353F5A;
+
 	h2 {
 		color: white;
 		margin-left: 30px;
 		display: inline-block;
 	}
-	
+
 	img {
 		margin: 5px 10px;
 		max-height: 2.5rem;
@@ -156,8 +155,8 @@ main {
 article {
 	padding: 3px 8px 10px;
 	background-color: #C0C0C0;
-  height: 70vh;
-  overflow: hidden;
+	height: 70vh;
+	overflow: hidden;
 }
 
 .pc_article {
@@ -175,16 +174,15 @@ section　中身
 	height: 60vh;
 	display: block;
 	background: #ccc;
-  overflow-y: scroll;
+	overflow-y: scroll;
 
-  h3 {
+	h3 {
     font-size: 1.5rem;
     padding: 10px 15px;
     background: #E1DBDC;
-    box-shadow: 0 0 4px inset #999999;
-    
-  }
-  
+	box-shadow: 0 0 4px inset #999999;
+}
+
 	p {
 		padding: 10px 15px;
 	}
@@ -199,8 +197,6 @@ footer
 ---------------------*/
 
 footer {
-	
-	
 	small {
 		height: 5rem;
 		background-image: url("../img/copy.png");
@@ -208,14 +204,13 @@ footer {
 		background-repeat: no-repeat;
 		font-size: 1.3rem;
 		padding: 2rem 1.5rem;
-		
+
     .footnav {
-      display: none;
+		display: none;
     }
-    
 	}
-  
-  .sitano1 {
+
+	.sitano1 {
     width: 100vw;
 	background-image: url("../img/barsita.png");
 	background-repeat: repeat-x;
@@ -223,8 +218,8 @@ footer {
 	bottom: 0;
     justify-content: space-between;
 	max-height: 50px;
-  }
-	
+	}
+
 	.sitano {
 		justify-content: flex-start;
 	}
@@ -234,20 +229,20 @@ footer {
 }
 
 .iconbaitai {
-  background-image: url("../img/tate.png"),url("../img/tate.png");
-  background-repeat: no-repeat;;;
-  background-position: right,left;
-  background-size: contain;
-  padding: 0 20px;
-  margin-left: 5px;
-  min-height: 2rem;
-  
-  img{
-    max-height: 2.5rem;
-    padding: 0 5px;
-    margin: 0 2px;
-    margin-top: 1.5rem;
-  }
+	background-image: url("../img/tate.png"),url("../img/tate.png");
+	background-repeat: no-repeat;
+	background-position: right,left;
+	background-size: contain;
+	padding: 0 20px;
+	margin-left: 5px;
+	min-height: 2rem;
+
+	img{
+		max-height: 2.5rem;
+		padding: 0 5px;
+		margin: 0 2px;
+		margin-top: 1.5rem;
+	}
 }
 
 
@@ -263,33 +258,33 @@ footnav
 -----------------*/
 
 ul.gmenu {
-  margin: 0;
-  padding: 0;
-  background-color: #C0C0C0;
+	margin: 0;
+	padding: 0;
+	background-color: #C0C0C0;
 }
- 
+
 ul.gmenu > li {
-  display: inline-block;
-  padding: 5px;
-  font-weight: bold;
+	display: inline-block;
+	padding: 5px;
+	font-weight: bold;
 }
 ul.gmenu > li a {
 	font-size: 1.7rem;
-  color: #656464;
+	color: #656464;
 }
- 
+
 
 ul.gmenu ul {
-  display: none;
+	display: none;
 }
 
 ul.gmenu > li:hover ul.oomaka {
-  display: block;
-  height: auto;
-  position: absolute;
-  background-color: #C0C0C0;
-  padding: 5px;
-  margin-left: -5px;
+	display: block;
+	height: auto;
+	position: absolute;
+	background-color: #C0C0C0;
+	padding: 5px;
+	margin-left: -5px;
 }
 
 
@@ -298,34 +293,34 @@ ul.gmenu ul.oomaka ul.kuwasiku {
 	display: none;
 }
 
- ul.oomaka li:hover ul.kuwasiku{
-  display: block;
-  height: auto;
-  position: absolute;
-  background-color: #C0C0C0;
+ul.oomaka li:hover ul.kuwasiku{
+	display: block;
+	height: auto;
+	position: absolute;
+	background-color: #C0C0C0;
 }
 
 
 ul.gmenu ul > li {
-  display: block;
-  padding:5px 10px;
+	display: block;
+	padding:5px 10px;
 }
- 
+
 ul.gmenu .oomaka li:hover {
-  background-color: #00007D;
-	
+	background-color: #00007D;
+
 	a {
 		color: #8C8DB4;
 	}
 }
 
 #footernav ul.gmenu > li {
-  position: relative;
+	position: relative;
 }
 #footernav ul.gmenu > li:hover ul.oomaka {
-  bottom: 0.5rem;
+	bottom: 0.5rem;
 	margin-bottom: 5rem;
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .oomaka > li {
@@ -333,9 +328,9 @@ ul.gmenu .oomaka li:hover {
 }
 
 .oomaka > li:hover ul {
-  left: 14rem;
+	left: 14rem;
 	bottom: 0.2rem;
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 
@@ -355,23 +350,24 @@ gallery
 	color: #cc1313;
 }
 
+@media (max-width: 768px) {
 
-
-
-
-
-
-
+	.pc_col2 {
+		width: 75%;
+	}
+	.pc_col3 {
+		display: none;
+	}
 
 @media (max-width: 420px) {
-	
+
 	.pc {
 		display: none;
 	}
 	.sp {
 		display: block;
 	}
-	
+
 	body {
 	background: #FFFFFF;
 	}
@@ -379,181 +375,178 @@ gallery
 	background: #D3E4FA;
 		padding: 8px 10px;
 	}
-	
+
 	.pc_article {
 		margin: 15px 5px;
 	}
-	
+
 	/*--------------
 	sp menu
 	--------------*/
 	header .sp{
-		
+
 		img{
 			max-height: 30px;
 		}
 		h1 {
 			font-size: 16px;
 			display: inline-block;
-		}	
+		}
 	}
-	
-	
+
+
 	.sp_footer{
 		height: 165px;
 		position: relative;
 		background: #D3E4FA;
-		
+
 		.img_sentaku {
 			position: absolute;
 			top: 10px;
 			right: 10px;
 		}
-		
+
 		.img_modoru{
 			position: absolute;
 			top: 10px;
 			left: 10px;
 		}
-		
+
 		.img_menu{
 			position: absolute;
 			bottom: 15px;
 			left: 10px;
 		}
-		
+
 		.img_daimaru {
 			max-width: 155px;
 			position: absolute;
 			top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
-		
+
 		.img_maru {
 			position: absolute;
 			top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
-		
+
 		.img_migi {
 			position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 24%;
-      right: 0;
-      margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 24%;
+			right: 0;
+			margin: auto;
 		}
-		
+
 		.img_hidari {
 			position: absolute;
 			top: 0;
-      bottom: 0;
-      left: 0;
-      right: 24%;
-      margin: auto;
+			bottom: 0;
+			left: 0;
+			right: 24%;
+			margin: auto;
 		}
-		
+
 		.img_ue{
 			position: absolute;
 			top: 0;
-      bottom: 62%;
-      left: 0;
-      right: 0;
-      margin: auto;
+			bottom: 62%;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
-		
+
 		.img_sita {
 			position: absolute;
 			top: 62%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
 	}/*---sp_footer---*/
-	
+
 	.fixed {
 		position: fixed;
 		bottom: 0;
-		left: 0;  
-    	width: 100%; 
+		left: 0;
+		width: 100%;
 	}
-	
-	
+
 	/*--------------
 	nakami
 	-----------------*/
-	
+
 	.nakami {
 		background: #fff;
-	
+
 		article {
 			background: #fff;
 		}
-		
 	}
-  
-  main {
-    margin-bottom: 170px;
-  }
-	
-  .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -20px;
+
+	main {
+		margin-bottom: 170px;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -30px;
+		margin-left: -20px;
   //padding部分にホバーが効かないようにする
-  pointer-events: none;
+		pointer-events: none;
 }
 
-  .col {
-    padding-top: 10px;
-    padding-left: 5px;
-    width: 33.3333%;
-  }
-  .col > * {
+	.col {
+		padding-top: 10px;
+		padding-left: 5px;
+		width: 33.3333%;
+	}
+
+	.col > * {
   //colの下の要素にはホバーをさせたいのでpointer-eventsを元に戻す
-  pointer-events: auto;
-} 
-  
-  .spmenujs {
-    margin-top: 15px;
-    padding: 15px 0 0 15px;
-  }
-	
-  
-  /*-----------------
-  
-  ------------------*/
-  .pc_row {
-    display: block;
-  }
-  
-  .pc_col1 {
-  width: 100%;
-}
+		pointer-events: auto;
+	}
 
-.pc_col2 {
-  width: 100%;
-}
+	.spmenujs {
+		margin-top: 15px;
+		padding: 15px 0 0 15px;
+	}
 
-.pc_col3 {
-  width: 100%;
-}
-  
-  
-  
-  
-  
-  
+
+/*-----------------
+
+------------------*/
+	.pc_row {
+		display: block;
+	}
+
+	.pc_col1 {
+		width: 100%;
+	}
+
+	.pc_col2 {
+		width: 100%;
+	}
+
+	.pc_col3 {
+		width: 100%;
+	}
+
+
+
+
+
+
+	}
 }/*--media--*/
-	
-	
-	
-	
+

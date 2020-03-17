@@ -322,7 +322,16 @@ gallery
   color: #cc1313;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
+  .pc_col2 {
+    width: 75%;
+  }
+  .pc_col3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 420px) {
   .pc {
     display: none;
   }
@@ -457,8 +466,8 @@ gallery
     padding: 15px 0 0 15px;
   }
   /*-----------------
-  
-  ------------------*/
+
+------------------*/
   .pc_row {
     display: block;
   }
