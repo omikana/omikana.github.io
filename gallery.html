@@ -6,7 +6,7 @@
 
   <link rel="icon" href="favicon.ico" type="image/vnd.favicon.icon">
 	<link rel="stylesheet" href="css/bootstrap-4.2.1.css">
-  <link rel="stylesheet" href="slick/slick.css">
+
   <!--ress.css-->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
@@ -14,7 +14,7 @@
   <!--レスポンシブ-->
   <meta name="viewport" content="width=device-widht, initial-scale=1">
 
-	  <!--style.css-->
+	<!--style.css-->
   <link href="css/style.css" rel="stylesheet">
 
 
@@ -28,25 +28,25 @@
     <div class="pc">
       <ul>
         <li><a href="profile.html">
-            <div class="icon"><img src="img/pc.png" alt="プロフィールに飛びます">
+            <div class="h-icon"><img src="img/pc.png" alt="プロフィールに飛びます">
               <p>myプロフィール</p>
             </div>
           </a></li>
 
         <li><a href="skill.html">
-            <div class="icon"><img src="img/nezi.png" alt="スキルのページに飛びます">
+            <div class="h-icon"><img src="img/nezi.png" alt="スキルのページに飛びます">
               <p>スキル</p>
             </div>
           </a></li>
 
         <li><a href="gallery.html">
-            <div class="icon"><img src="img/file.png" alt="作品集に飛びます">
+            <div class="h-icon"><img src="img/file.png" alt="作品集に飛びます">
               <p>作品集</p>
             </div>
           </a></li>
 
         <li><a href="contact.html">
-            <div class="icon"><img src="img/contact.png" alt="コンタクトページに飛びます">
+            <div class="h-icon"><img src="img/contact.png" alt="コンタクトページに飛びます">
               <p>コンタクト</p>
             </div>
           </a></li>
@@ -74,7 +74,7 @@
 	  
     <article class="pc_article">
       <div class="bar flex pc">
-        <h2>OMI's gallery</h2>
+        <h2 class="bar_txt">OMI's gallery</h2>
         <a href="javascript:history.back()"><img src="img/batu.png" alt="前のページに戻る"></a>
       </div>
 
@@ -96,44 +96,174 @@
       <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active"> <div class="inner_gallery flex "><img class="d-block mx-auto" src="img/profilepng.png" alt="#">
-        <p class="pc">始めて作った自己紹介ページです。<br>韓国語/中国語に切り替えれるようにしました。<br><a href="#">詳しくみる</a></p>
-          </div>
+      <div class="carousel-item active">
+        <div class="inner_gallery flex ">
+        <img class="d-block mx-auto" src="img/profile.png" alt="始めて作った自己紹介ページ">
+          <div class="Excerpt">
+            <p class="pc">入校後1か月目に作った自己紹介ページです。<br>韓国語/中国語に切り替えれるようにしました。<br>
+          <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"><img src="img/ai.png" alt="Illustrator"></div>
+          <br><a href="#">詳しくみる</a></p></div>
+        </div>
         <div class="carousel-caption"> </div>
       </div>
 
-      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/aquarium.png" alt="#">
-        <p class="pc">訓練校のテストで作ったサイトです。<br><a href="#">詳しくみる</a>
-        </p></div>
+      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/zoo.png" alt="動物園のサイト">
+        <div class="Excerpt">
+          <p class="pc">学校の授業で作ったサイトです。<br>作成時間：5時間<br>
+        <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"></div>
+        <br><a href="#">詳しくみる</a></p></div>
+      </div>
+      <div class="carousel-caption"> </div>
+      </div>
+
+      <div class="carousel-item"> <div class="inner_gallery flex">
+        <img class="d-block mx-auto" src="img/aquarium.png" alt="訓練校のテストで作成したサイト">
+        <div class="Excerpt">
+          <p class="pc">訓練校のテストで作成したサイトです。<br>作成時間：6時間<br>
+        <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"></div>
+        <br><a href="#">詳しくみる</a></p></div>
+      </div>
         <div class="carousel-caption"> </div>
       </div>
 
-      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/ryokou.png" alt="#">
-      <p class="pc">始めて自作デザインの旅行サイトを作りました。<br><a href="#">詳しくみる</a></p></div>
-        <div class="carousel-caption"> </div>
+      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/ryokou.png" alt="旅行サイト">
+        <div class="Excerpt">
+          <p class="pc">始めて自作デザインの旅行サイトを作りました。<br>
+            ダークモード対応させました<br>
+        <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"><img src="img/js.png" alt="javascript"><img src="img/ai.png" alt="Illustrator"><img src="img/ps.png" alt="Photoshop"><img src="img/dw.png" alt="Dreamweaver"><img src="img/php.png" alt="php"><img src="img/wordpress.png" alt="WordPress"></div>
+        <br><a href="#">詳しくみる</a></p></div>
       </div>
+      <div class="carousel-caption"> </div>
+    </div>
 
-      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/dark.png" alt="#">
-      <p class="pc">旅行サイトをダークモード適用させました。<br><a href="#">詳しくみる</a></p></div>
-        <div class="carousel-caption"> </div>
-      </div>
+    <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/kanpou.png" alt="漢方ダイエットのサイト">
+      <div class="Excerpt">
+        <p class="pc">BMIをjavascriptで計算出来るサイトを作りました。<br>
+      <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"><img src="img/js.png" alt="javascript"><img src="img/ai.png" alt="Illustrator"><img src="img/ps.png" alt="Photoshop"></div>
+      <br><a href="#">詳しくみる</a></p></div>
+    </div>
+    <div class="carousel-caption"> </div>
+  </div>
 
-      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/kaidoudosageta3.png" alt="#">
-        <p class="pc"></p></div>
-        <div class="carousel-caption"> </div>
-      </div>
+  <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/portfolio.png" alt="ポートフォリオサイト">
+    <div class="Excerpt">
+      <p class="pc">始めて作ったポートフォリオサイトです。<br>
+    <div class="carousel-gallery__item flex"><img src="img/html.png" alt="HTML"><img src="img/css.png" alt="CSS"><img src="img/scss.png" alt="scss"><img src="img/bootstrap.png" alt="bootstrap"><img src="img/js.png" alt="javascript"><img src="img/jquery.png" alt="jquery"><img src="img/ai.png" alt="Illustrator"><img src="img/ps.png" alt="Photoshop"></div>
+    <br><a href="#">詳しくみる</a></p></div>
+  </div>
+  <div class="carousel-caption"> </div>
+</div>
 
-      <div class="carousel-item"> <div class="inner_gallery flex"><img class="d-block mx-auto" src="img/kaidoudosageta3.png" alt="#">
-        <p class="pc"></p></div>
-        <div class="carousel-caption"> </div>
-      </div>
+
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-
-
       </div><!--nakami_gallery-->
 
+
+      <div class="gallery_box">
+
+
+
+        <div class="g-cols">
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="g-container">
+                  <div class="front" style="background-image: url(img/profile.png)">
+                      <div class="g-inner">
+                          <p>Profile</p>
+              <span>プロフィールページ</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="g-inner">
+                          <p>1か月目に作成したサイトです。多言語対応をさせました。terapadを使用して作りました。<br>作成時間:約3日</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+            <div class="g-container">
+                <div class="front" style="background-image: url(img/zoo.png)">
+                    <div class="g-inner">
+                        <p>Zoo</p>
+            <span>動物園のサイト</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="g-inner">
+                        <p>学校のテストの練習で作ったサイトです。bracketを使用して作りました。<br>作成時間:約5時間</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="g-container">
+                  <div class="front" style="background-image: url(img/aquarium.png)">
+                      <div class="g-inner">
+                          <p>Aquarium</p>
+              <span>水族館のサイト</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="g-inner">
+                          <p>学校のテストで作成しました。bracketを使用して作りました。<br>作成時間:約6時間</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="g-container">
+                  <div class="front" style="background-image: url(img/ryokou.png)">
+                      <div class="g-inner">
+                          <p>Travel</p>
+              <span>旅行サイト</span>
+                      </div>
+                  </div>
+                  <div class="g-back">
+                      <div class="g-inner">
+                          <p>旅行サイトを作りました。ダークモード対応させました。Dreamweaverを使用して作りました。</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="g-container">
+                  <div class="front" style="background-image: url(img/kanpou.png)">
+                      <div class="g-inner">
+                          <p>Diet</p>
+              <span>javascriptの練習サイト</span>
+                      </div>
+                  </div>
+                  <div class="back">
+                      <div class="g-inner">
+                          <p>BMIの計算機を課題で作ったので、ダイエットサイトを作りました。vscodeを使用して作りました。</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="g-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="g-container">
+                  <div class="front" style="background-image: url(img/portfolio.png)">
+                      <div class="g-inner">
+                          <p>Portfolio</p>
+              <span>今御覧に頂いているサイト</span>
+                      </div>
+                  </div>
+                  <div class="g-back bg2">
+                      <div class="g-inner">
+                          <p>始めて作ったポートフォリオサイトです。windows98を模倣して作りました。SP用にスタイルをガラパゴス携帯の画面を模倣して作りました。vscodeを使用しました。</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+      </div><!--gallery_box-->
           </div><!--nakami_section-->
           </section>
       </div><!--nakami-->
@@ -147,7 +277,7 @@
 
   </main>
   </li><!--colの設定の-->
-  
+
   <li class="pc_col3">
     <aside>
       
@@ -161,29 +291,28 @@
       <div class="sitano flex">
         <nav id="footernav">
           <ul class="gmenu">
-            <li><a href="#" class="hiraku"><img class="start" src="img/start.png" alt="スタート、メニューバーが開きます"></a>
+            <li><a href="index.html" class="hiraku"><img class="start" src="img/start.png" alt="スタート、メニューバーが開きます"></a>
               <div>
                 <ul class="oomaka">
-                  <li><a href="index.html">MY プロフィール</a></li>
+                  <li><a href="profile.html">MY プロフィール</a></li>
 
-                  <li class="komenu"><a href="#">スキル</a>
+                  <li class="komenu"><a href="skill.html">スキル</a>
                     <div>
                       <ul class="kuwasiku">
-                        <li><a href="#">コーディング</a></li>
-                        
-                        <li><a href="#">アプリケーション</a></li>
+                        <li><a href="skill.html#code">コーディング</a></li>
+                        <li><a href="skill.html#application">アプリケーション</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="komenu"><a href="#">作品集</a>
+                  <li class="komenu"><a href="gallery.html">作品集</a>
                     <div>
                       <ul class="kuwasiku">
-                        <li><a href="#">ホームページ</a></li>
-                        <li><a href="#">作成素材・加工</a></li>
+                        <li><a href="gallery.html#homepage">ホームページ</a></li>
+                        <li><a href="gallery.html#app">作成素材・加工</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li><a href="#">コンタクト</a></li>
+                  <li><a href=contact.html>コンタクト</a></li>
                 </ul>
                 <!--大まかなul-->
               </div>
@@ -192,13 +321,13 @@
         </nav>
 
         <div class="flex iconbaitai">
-          <a href="#"><img src="img/kaizoudokegeta5.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaidoudosageta3.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaizoudosagetajs.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaizoudootositaAi.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaizoudootositaPs.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaizoudootositaXd.png" alt="アイコン"></a>
-          <a href="#"><img src="img/kaizoudootositaDw.png" alt="アイコン"></a>
+          <a href="#"><img src="img/html.png" alt="アイコン"></a>
+          <a href="#"><img src="img/css.png" alt="アイコン"></a>
+          <a href="#"><img src="img/js.png" alt="アイコン"></a>
+          <a href="#"><img src="img/ai.png" alt="アイコン"></a>
+          <a href="#"><img src="img/ps.png" alt="アイコン"></a>
+          <a href="#"><img src="img/dw.png" alt="アイコン"></a>
+          <a href="#"><img src="img/xd.png" alt="アイコン"></a>
         </div>
       </div>
       <small>copyright©2020 omi portfolio</small>
@@ -234,7 +363,6 @@
   crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.2.1.js"></script>
-	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
 <script src="sp.js"></script>
 </body>
 </html>

@@ -1,0 +1,101 @@
+
+.command {
+    background: color(form-bg);
+}
+.command_head {
+    font-size: rem(18);
+
+    img {
+        max-height: rem(18);
+    }
+}
+
+#formWrap {
+    width: 100%;
+    color: color(form-txt);
+    font-size: rem(18);
+}
+
+table.formTable {
+    border-collapse: collapse;
+
+    td,
+    th {
+    padding: 10px;
+    }
+
+    th{
+        width: 32%;;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    td {
+        width: 64%;
+    }
+}
+
+input,
+textarea {
+    border: 1px solid color(form-txt);
+    color: color(form-txt);
+}
+
+.form-text {
+    display: flex;
+}
+th span {
+    color: color(accent);
+    font-size: rem(12);
+}
+
+@media (max-width: 768px) {
+    #formWrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    table.formTable th,
+    table.formTable td {
+        border: initial;
+        width: auto;
+        display: block;
+    }
+
+    table.formTable th {
+        margin-top: 5px;
+        border-bottom: 0;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 80%;
+        padding: 5px;
+        font-size: rem(16);
+        display: block;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+        display: block;
+        width: 100%;
+        height: 40px;
+    }
+    .form-text {
+        display: block;
+    }
+
+@media screen and (max-width:420px) {
+    #formWrap {
+        color: color(base-txt);
+    }
+
+    input,
+    textarea {
+    border: 1px solid color(head-bg);
+    color: color(base-txt);
+}
+
+}
+}

@@ -1,0 +1,56 @@
+
+@import 'import/object/_font.scss';
+@import 'import/object/_color.scss';
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+p {
+	font-size: rem(16);
+}
+
+h2 {
+	font-size: rem(25);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: color(base-txt);
+}
+
+
+.wrapper {
+	margin: 0 auto;
+}
+
+body {
+    background: color(base);
+}
+.flex {
+	display: flex;
+}
+
+.jc {
+	justify-content: space-between;
+}
+
+.sp {
+	display: none;
+}
+
