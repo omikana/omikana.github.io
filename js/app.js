@@ -33,7 +33,7 @@ jQuery( function() {
 
 jQuery( function() {
     jQuery . jqplot(
-        'jqPlot2',
+        'graph',
         [
             [ [ 80, 'XD' ], [ 95, 'DreamWeaver' ], [ 75, 'Photoshop' ], [ 77, 'Illustrator' ] ]
         ],

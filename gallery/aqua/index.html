@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>深海水族館</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--less.css-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="container">
+
+  <header>
+    <h1><a href="index.html"><img src="img/logo.png" alt="深海水族館"></a></h1>
+    <nav>
+      <ul class="flex wrapper">
+        <li><a href="#news"><div class="navbox" data-0="opacity:0;" data-bottom-top="transform:translateX(100px);" data-center-center="transform:translateX(500px); opacity:1;" data-top-top="transform:translateX(400px); opacity:0.5;" data-top-bottom="opacity:0.7;"><img src="img/news.png" alt="ニュース"></div></a></li>
+        <li><a href="#event"><div class="navbox" data-0="opacity:0;" data-bottom-top="transform:translateX(1000px);" data-center-center="transform:translateX(550px);  opacity:0.7;" data-top-top="transform:translateY(-50px);transform:translateX(550px); opacity:0.5;" data-top-bottom="opacity:0.7;"><img src="img/event.png" alt="イベント"></div></a></li>
+        <li><a href="#access"><div class="navbox" data-0="opacity:0;" data-bottom-top="transform:translateX(1000px);" data-center-center="transform:translateX(700px); opacity:1;" data-top-top="transform:translateX(750px); opacity:0.5;" data-top-bottom="opacity:0.7;"><img src="img/access.png" alt="アクセス"></div></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg">
+    <img class="op" src="img/bg.png" alt="">
+  </div>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+  <main>
+
+    <section id="news" class="wrapper">
+      <h2>深海水族館ニュース</h2>
+      <img src="img/newspop.png" alt="新しい仲間をお迎えしました。"><br>
+      <div class="txt"><time datetime="2020-05">2020/05</time>
+      <p>新しい仲間をお迎えしました。<br>
+        それに伴って新コーナーを2階深海魚コーナーの横に増設しました。<br>
+        是非足を運んで見てください。</p>
+      </div>
+    </section>
+
+    <section id="event" class="wrapper">
+      <h2>イベント</h2>
+      <div class="flex ja">
+        <div class="box"><img src="img/kuma.png" alt="シロクマ">
+        <p><br>泳ぐシロクマ<br>
+          イベントショー<br>
+        <br>
+        毎日11時、13時、15時開催</p>
+        </div>
+                <div class="box"><img src="img/pengin.png" alt="ペンギン">
+        <p><br>ペチペチ<br>
+          ペンギンショー<br>
+        <br>
+        毎日14時、16時開催</p>
+        </div>
+        <div class="box"><img src="img/hana.png" alt="海の花イベント">
+          <p><br>海に咲く花<br>
+            特別展示イベント<br>
+          <br>
+          8月まで開催中</p>
+          </div>
+      </div>
+      <img src="img/kai.png" alt="貝殻">
+    </section>
+
+    <section id="access" class="wrapper">
+      <h2>アクセス</h2>
+      <div class="flex ja">
+        <p>〒000-0000<br>
+          <br>
+          OO県OO市OO町<br>
+          OOOOOOOOOOOOO</p>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7123036271955!2d18.005783315079107!3d34.5608389804706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDMzJzM5LjAiTiAxOMKwMDAnMjguNyJF!5e0!3m2!1sja!2sjp!4v1589043364678!5m2!1sja!2sjp" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>©sinkaiaquarium.co</small>
+  </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
+      <script src="js/water.js"></script>
+      <script src="js/skrollr.js"></script>
+      <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+    <script src="js/shabon.js"></script>
+</body>
+</html>

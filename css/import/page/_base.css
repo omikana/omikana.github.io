@@ -187,7 +187,7 @@ ul.gmenu {
 }
 
 ul.gmenu > li {
-  display: inline-block;
+  display: block;
   padding: 5px;
   font-weight: bold;
 }

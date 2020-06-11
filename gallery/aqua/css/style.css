@@ -1,0 +1,303 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hannari";
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.flex {
+  display: flex;
+}
+
+.ja {
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* スクロールの幅の設定 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* スクロールの背景の設定 */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: linear-gradient(181.87899deg, #4939a3 6.37633%, #06241e 73.66356%);
+  box-shadow: 0 0 4px #6759eb inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(162, 167, 235, 0.575);
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Merienda', cursive;
+  background: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.op {
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.bg {
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3500px;
+  background-size: cover;
+  z-index: 1;
+}
+
+/*-------------header----------------*/
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+header h1 a {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 90;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 250px;
+}
+
+header nav {
+  position: relative;
+}
+
+header nav ul {
+  position: absolute;
+  top: -650px;
+  left: 50%;
+  transform: translate(-50%);
+  padding-bottom: 300px;
+}
+
+header nav ul li a {
+  z-index: 90;
+}
+
+header nav ul li a .navbox img {
+  width: 300px;
+  margin: 0 100px;
+  display: block;
+}
+
+.bubbles {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -40;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  animation: bubble 10s ease-in infinite;
+}
+
+.bubble:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-duration: 3.5s;
+}
+
+.bubble:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  left: 30%;
+  animation-duration: 7s;
+}
+
+.bubble:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 67%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  animation-duration: 4.5s;
+}
+
+@keyframes bubble {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    bottom: 1000px;
+  }
+}
+
+/*--------------main----------------*/
+#news {
+  background: rgba(133, 166, 236, 0.45);
+  z-index: 2;
+  padding: 50px;
+  border-radius: 100px;
+  margin-right: 250px;
+  margin-top: 800px;
+  text-align: center;
+}
+
+#news h2 {
+  font-size: 45px;
+  padding: 30px 0 50px;
+  color: #23166c;
+}
+
+#news .txt {
+  text-align: left;
+}
+
+#news .txt time {
+  font-size: 50px;
+  color: #5f4bd7;
+}
+
+#news .txt p {
+  color: #251e51;
+}
+
+#event {
+  background: rgba(150, 134, 240, 0.45);
+  z-index: 2;
+  padding: 50px 50px 0;
+  border-radius: 100px;
+  margin-right: 250px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#event h2 {
+  color: #7380f8;
+  font-weight: bold;
+  font-size: 45px;
+  padding: 30px 0 50px;
+}
+
+#event img {
+  padding: 0 25px;
+}
+
+#event p {
+  color: #b6acf2;
+}
+
+#access {
+  background: rgba(33, 14, 140, 0.45);
+  z-index: 2;
+  padding: 50px;
+  border-radius: 100px;
+  margin-right: 250px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#access h2 {
+  color: #9186d5;
+  font-size: 45px;
+  padding: 30px 0 50px;
+}
+
+#access p {
+  color: #b6acf2;
+}
+
+/*------------footer--------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #0f2846;
+  height: 120px;
+  width: 100vw;
+  margin: 0 auto;
+  vertical-align: middle;
+  z-index: 2;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+footer small {
+  color: #beace7;
+}

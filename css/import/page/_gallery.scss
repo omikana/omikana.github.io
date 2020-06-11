@@ -70,10 +70,10 @@ gallery
 }
 
 .back{
-    background-image: -webkit-repeating-linear-gradient(27deg,rgba(96,220,169,0.7) 0%,rgba(148,87,238,0.5) 52.85%,rgba(66,83,207,0.5) 100%);
-    background-image: -moz-repeating-linear-gradient(27deg,rgba(96,220,169,0.5) 0%,rgba(148,87,238,0.5) 52.85%,rgba(66,83,207,0.5) 100%);
-    background-image: -o-repeating-linear-gradient(27deg,rgba(96,220,169,0.5) 0%,rgba(148,87,238,0.5) 52.85%,rgba(66,83,207,0.5) 100%);
-    background-image: repeating-linear-gradient(63deg,rgba(96,220,169,0.5) 0.00%,rgba(148,87,238,0.5) 52.85%,rgba(66,83,207,0.5) 100%);
+    background-image: -webkit-repeating-linear-gradient(27deg,rgba(50, 124, 93, 0.7) 0%,rgba(107, 60, 179, 0.5) 52.85%,rgba(47, 62, 168, 0.5) 100%);
+    background-image: -moz-repeating-linear-gradient(27deg,rgba(50, 124, 93, 0.7) 0%,rgba(107, 60, 179, 0.5) 52.85%,rgba(47, 62, 168, 0.5) 100%);
+    background-image: -o-repeating-linear-gradient(27deg,rgba(50, 124, 93, 0.7) 0%,rgba(107, 60, 179, 0.5) 52.85%,rgba(47, 62, 168, 0.5) 100%);
+    background-image: repeating-linear-gradient(27deg,rgba(50, 124, 93, 0.7) 0%,rgba(107, 60, 179, 0.5) 52.85%,rgba(47, 62, 168, 0.5) 100%);
 }
 
 .g-back {
@@ -203,6 +203,13 @@ gallery
 	font-weight: 300;
 	font-size: rem(12);
 }
+
+
+.g-col a {
+    color: #fff;
+    text-shadow: hoff voff blur #000;
+}
+
 
 @media (max-width: 1250px) {
 	.g-col{

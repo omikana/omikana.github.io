@@ -17,19 +17,20 @@
   <script language="javascript" type="text/javascript" src="jqplot/jquery.jqplot.min.js"></script>
   <script language="javascript" type="text/javascript" src="jqplot/jqplot.barRenderer.js"></script>
   <script language="javascript" type="text/javascript" src="jqplot/jqplot.categoryAxisRenderer.js"></script>
+  <script language="javascript" type="text/javascript" src="jqplot/excanvas.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="jqplot/jquery.jqplot.css" />
+  <link rel="stylesheet" type="text/css" href="jqplot/jquery.jqplot.min.css" />
   <script src="js/app.js"></script>
 </head>
 
-<body id="top_body_skill">
+<body id="skillpage">
 <ul class="pc_row">
   <li class="pc_col1">
     <header>
     <div class="pc">
       <ul>
         <li><a href="profile.html">
-            <div class="icon"><img src="img/pc.png" alt="プロフィールに飛びます">
+            <div class="icon"><img src="img/script_file.png" alt="プロフィールに飛びます">
               <p>myプロフィール</p>
             </div>
           </a></li>
@@ -72,32 +73,72 @@
   <li class="pc_col2">
   <main class="wrapper">
 	  
-	  <img class="sp wrapper sp_main_img" src="imgsp/main_menu.png" alt="メニュー">
+	  <img class="sp wrapper sp_main_img" src="imgsp/skill1.png" alt="スキル">
 	  
     <article class="pc_article">
       <div class="bar flex pc">
         <h2 class="bar_txt">OMI's skill</h2>
         <a href="javascript:history.back()"><img src="img/batu.png" alt="前のページに戻る"></a>
       </div>
-		
-		
+
+
+      <script language="javascript" type="text/javascript">
+        function OnClick(a_name) {
+          var elements = document.getElementsByName( "tab_item" ) ;
+      　    elements[0].checked = true ;
+        }
+
+        function OnClick2(a_name) {
+          var elements = document.getElementsByName( "tab_item" )
+            elements[1].checked = true ;
+            }
+      </script>
+
       <div class="nakami">
         <section id="spImgMenu section_skill">
-          <h3 class="nakami_header" id="code">スキル</h3>
-          <div class="nakami_section">
+
+        <div class="tabs">
+            <input id="pcode" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="pcode">コーディング</label>
+            <input id="pskill" type="radio" name="tab_item">
+            <label class="tab_item" for="pskill">アプリケーション</label>
+
+            <div class="tab_content" id="pcode_content">
+              <div id="tabcode"></div>
+
+          <div class="nakami_section" id="top_body_skill">
           <p class="midasi">コーディングスキル</p>
-          <div id="jqPlot"></div>
+          <div id="jqPlot" class="jqPlot"></div>
           <p>資格：サーティファイ主催　Webクリエイター能力認定試験　エキスパート</p>
 
-          <p>職業訓練校でHTML/CSS,javaScript,WordPressを学びました。<br>PHPは現在勉強中です。</p>
+          <p class="setumei">職業訓練校でHTML/CSS,javaScript,WordPressを学びました。<br><br>
+            HTML/CSSはfloatやflex,grid,table,trancefoam等を使うことが出来ます。<br><br>
+            javaScriptは検索して使っていたり、簡単なものであれば自作しています。自作で書けるプログラムを増やすべく、現在も勉強中です。<br><br>
+            WordPressは自作で作ったサイトを調べながらテーマにすることができます。個人用に自作ブログを作って更新しています。まだほぼPVはありませんがSEOに付いて調べながらしています。<br><br>
+            コーディングが好きなので、幅広くプログラムを打てるフロントエンドエンジニアになりたいので、PHPを現在勉強しています。
+          </p>
+        </div><!--tab_content-->
+        </div>
 
+
+          <div class="tab_content" id="pskill_content">
           <p id="application" class="midasi">アプリケーションスキル</p>
-          <div id="jqPlot2"></div>
-          <p class="setumei">職業訓練校でPhotoshop/Illustrator,XD等を学びました。</p>
-          </section>
-      </div>
+          <img src="img/skill2.png" alt="illustrator76％　Photoshop90％　XD95％Dreamweaver72％">
+          <p class="setumei">職業訓練校でPhotoshop/Illustrator,XD等を学びました。<br><br>
+          ワイヤーフレームはPhotoshopかXDで作り、Illustratorでアイコンを作ったりしています。<br><br>
+          デザインは得意ではないですが、illustrator、Photoshopの操作は好きです。<br><br>
+          Dreamweaverはmap機能を使う時に使用していますが、普段はVScodeを使っています。<br>
+          Dreamweaverで１からコーディングする事も可能です。
+          </p>
+
+        </div>
+
+
+
+      </div><!--tabs-->
+    </section>
+    </div><!--nakami-->
     </article>
-    
 
 
 
@@ -107,10 +148,10 @@
 
   </main>
   </li><!--colの設定の-->
-  
+
   <li class="pc_col3">
     <aside>
-      
+
     </aside>
   </li>
 </ul><!--gridの為-->
@@ -129,16 +170,16 @@
                   <li class="komenu"><a href="skill.html">スキル</a>
                     <div>
                       <ul class="kuwasiku">
-                        <li><a href="skill.html#code">コーディング</a></li>
-                        <li><a href="skill.html#application">アプリケーション</a></li>
+                        <li><a href="skill.html#tabcode" onClick="OnClick();">コーディング</a></li>
+                        <li><a href="skill.html#application" onClick="OnClick2();">アプリケーション</a></li>
                       </ul>
                     </div>
                   </li>
                   <li class="komenu"><a href="gallery.html">作品集</a>
                     <div>
                       <ul class="kuwasiku">
-                        <li><a href="gallery.html#homepage">ホームページ</a></li>
-                        <li><a href="gallery.html#app">作成素材・加工</a></li>
+                        <li><a href="gallery.html#homepage" onClick="OnLinkClick();">ホームページ</a></li>
+                        <li><a href="gallery.html#app" onClick="OnLinkClick2();">作成素材・加工</a></li>
                       </ul>
                     </div>
                   </li>
@@ -162,30 +203,27 @@
       </div>
       <small>copyright©2020 omi portfolio</small>
     </div>
-	  
-	  
-	  
-	  <div class="sp fixed">
-		  <div class="sp_footer">
-	  	<img class="img_sentaku" src="imgsp/sentaku.png" alt="選択">
-      <input type="image" class="img_menu" src="imgsp/footer_menu.png" onclick="menu();" alt="メニュー">
-        
-        
-		  <img class="img_modoru" src="imgsp/modoru.png" alt="戻る">
+
+
+    <div class="sp fixed">
+      <div class="sp_footer">
+        <img class="img_sentaku" src="imgsp/sentaku.png" alt="選択">
+      <input type="image" class="img_menu" src="imgsp/footer_menu.png" onclick="menu2();" alt="メニュー">
+
+		  <a href="javascript:history.forward()"><img class="img_modoru" src="imgsp/modoru.png" alt="戻る"></a>
 		  <img class="img_daimaru" src="imgsp/daimaru.png" alt="丸">
 		  <img class="img_maru" src="imgsp/syoumaru.png" alt="丸選択">
-        
+
 		  <a href="javascript:history.forward()"><img class="img_migi" src="imgsp/migi.png" alt="先に進む"></a>
 		  <a href="javascript:history.back()"><img class="img_hidari" src="imgsp/hidari.png" alt="前のページに戻る"></a>
 		  <a href="#top_body_skill"><img class="img_ue" src="imgsp/ue.png" alt="上"></a>
 		  <img class="img_sita" src="imgsp/sita.png" alt="下">
 	  </div>
 	  </div>
-	  
-	  
-	  
-	  
+
   </footer>
+  <script src="spskill.js"></script>
 <script src="sp.js"></script>
+
 </body>
 </html>
