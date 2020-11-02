@@ -1,4 +1,0 @@
-/* 初期文字サイズを16pxに設定 */
-@function rem($size) {
-    @return #{$size / 16}rem;
-}
